@@ -1,0 +1,40 @@
+.button-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  gap: 10px;
+  height: 58px;
+  padding: 18px 30px;
+  width: fit-content;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+  background-color: var(--purple-linear);
+  text-decoration: none;
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid var(--purple-linear, #9818ff);
+}
+
+.disable {
+  background-color: --gray;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button-large:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(146, 43, 204) 0%,
+    rgb(127.44, 33.89, 246.5) 100%
+  );
+  color: white;
+  box-shadow: var(--button-shaddow);
+  transition: all ease 0.3s;
+  cursor: pointer;
+}

@@ -1,0 +1,147 @@
+.applicationContainer {
+  max-width: 1444px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 13.8rem;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.applicationHeader {
+  color: #fff;
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.1rem;
+  text-transform: uppercase;
+  max-width: 53rem;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  /* background-color: red; */
+}
+
+.applicationHeader img {
+  position: absolute;
+  top: 8px;
+  right: 50px;
+}
+
+.benefitsContainer span {
+  font-family: Bebas Neue;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.05rem;
+  text-transform: uppercase;
+  background: var(--Linear, linear-gradient(269deg, #01ff94 0%, #16dab5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.benefitsContainer div {
+  display: flex;
+  align-items: center;
+  gap: 0.94rem;
+  width: 19.75rem;
+}
+
+.benefitsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3.75rem;
+}
+
+.applicationContent-header {
+  color: white;
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.1rem;
+  text-transform: uppercase;
+}
+
+.applicationContent {
+  max-width: 53.75em;
+}
+
+/* Mobile Friendly -------------------------------------- */
+
+@media screen and (max-width: 1440px) {
+  .heroSectionMainImg {
+    max-width: 1080px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .benefitsContainer {
+  }
+  .benefitsContainer {
+    gap: 1.5em;
+  }
+  .heroSectionMainImg {
+    max-width: 910px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heroSectionMainImg {
+    max-width: 800px;
+  }
+  .benefitsIcons {
+    max-width: 75px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .benefitsContainer {
+    flex-wrap: wrap;
+    max-width: 410px;
+  }
+
+  .heroSectionMainImg {
+    max-width: 550px;
+  }
+
+  .applicationContent {
+    max-width: 50em;
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroSectionMainImg {
+    max-width: 424px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .heroSectionMainImg {
+    max-width: 300px;
+  }
+  .applicationHeader {
+    font-size: 3.5rem;
+  }
+  .applicationHeader img {
+    top: 3px;
+    right: 25px;
+  }
+  .heroSectionElipses {
+    max-width: 140px;
+  }
+  .applicationContent-header {
+    font-size: 3.5rem;
+  }
+}

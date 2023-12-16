@@ -1,0 +1,11 @@
+.tag {
+  background-color: var(--w16);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 34px;
+  border: 1.5px solid #50535f;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
