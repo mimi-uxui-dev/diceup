@@ -1,6 +1,4 @@
 import React from "react";
-import "./styles.css";
-import { inter } from "../../../fonts";
 
 interface TagProps {
   label: string;
@@ -8,6 +6,12 @@ interface TagProps {
 }
 
 function Tag({ label, className }: TagProps) {
-  return <div className={`tag h5 ${className}`}>{label}</div>;
+  return (
+    <div
+      className={`bg-w16 text-white px-6 py-3 rounded-full border border-gray-700 text-center h5 ${className}`}
+    >
+      {label}
+    </div>
+  );
 }
 export default Tag;

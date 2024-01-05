@@ -145,19 +145,13 @@ const footerContentBottom = {
 
 export const Footer = ({ inputType = "email" }) => {
   return (
-    <footer>
+    <footer className="flex justify-center items-center flex-col bg-Black2 mt-20 px-6 py-20 2xl:p-10">
       {/* Top */}
-      <div className="footer-top">
+      <div className="flex flex-col lg:flex-row justify-between items-start  w-full 2xl gap-10 lg:gap-0 ">
         {/* col1 */}
-        <Image
-          src={logo}
-          className="footerLogo"
-          width={200.6}
-          height={64}
-          alt={`Dice Up logo`}
-        />
+        <Image src={logo} className="w-48 lg:w-36" alt={`Dice Up logo`} />
         {/* col2 */}
-        <div className="gap15">
+        <div className="flex flex-col gap-4">
           {footerContent[0].content?.map((item) => (
             <a key={item.label} className="buttonText" href={item.url}>
               {item.label}
@@ -165,7 +159,7 @@ export const Footer = ({ inputType = "email" }) => {
           ))}
         </div>
         {/* col3 */}
-        <div className="gap15">
+        <div className="flex flex-col gap-4">
           {footerContent[1].content?.map((item) => (
             <a key={item.label} className="buttonText" href={item.url}>
               {item.label}
@@ -173,10 +167,10 @@ export const Footer = ({ inputType = "email" }) => {
           ))}
         </div>
         {/* col4 */}
-        <div className="gap50">
-          <div className="gap15">
+        <div className=" flex flex-col gap-12">
+          <div className="flex flex-col gap-4">
             <p className="buttonText">{footerContent[2].row1?.title}</p>
-            <div className="flexRow gap15">
+            <div className="flex flex-row gap-4">
               {footerContent[2].row1?.content.map((item) => (
                 <a key={item.label} href={item.url}>
                   <Image
@@ -189,7 +183,7 @@ export const Footer = ({ inputType = "email" }) => {
               ))}
             </div>
           </div>
-          <div className="gap15">
+          <div className="flex flex-col gap-4">
             <p className="buttonText">{footerContent[2].row2?.title}</p>
             {footerContent[2].row2?.content.map((item) => (
               <a key={item.label} href={item.url}>
@@ -204,7 +198,7 @@ export const Footer = ({ inputType = "email" }) => {
           </div>
         </div>
         {/* col5 */}
-        <div className="gap20">
+        <div className="flex w-fit flex-col gap-5">
           <p className="buttonText">Join our newsletter</p>
           <Input
             placeholder="Your email.."
@@ -215,8 +209,8 @@ export const Footer = ({ inputType = "email" }) => {
         </div>
       </div>
       {/* Bottom */}
-      <div className="footer-bottom">
-        <div className="flex gap30">
+      <div className="flex flex-col lg:flex-row gap-14 lg:gap-0 justify-between w-full mt-20">
+        <div className="flex gap-8 flex-col lg:flex-row">
           {footerContentBottom.content.map((item) => (
             <a key={item.label} className="buttonText" href={item.url}>
               {item.label}

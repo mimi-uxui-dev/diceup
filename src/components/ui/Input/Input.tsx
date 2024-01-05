@@ -23,13 +23,15 @@ const Input: FC<InputProps> = ({
   // };
 
   return (
-    <div className={`inputContainer ${classname}`}>
-      {label && <label>{label}</label>}
+    <div className={`  ${classname}`}>
+      {label && <label className="text-white"> mm {label}</label>}
       <input
+        className="flex w-80 p-3 items-center border border-solid border-purpleLinear focus:border-purple-300 bg-transparent text-white rounded-md"
         type={type}
         value={value}
         // onChange={handleChange}
         placeholder={placeholder}
+        readOnly
       />
     </div>
   );
